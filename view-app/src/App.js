@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Greeting from './components/Greeting';
 import Card from './components/Card';
 
-const students = [
+/* const students = [
   { id: 1, name: 'ฝน',   year: 3 },
   { id: 2, name: 'เต้ย', year: 2 },
   { id: 3, name: 'มายด์', year: 4 },
@@ -27,5 +27,39 @@ function App() {
   );
 }
 
+
+export default App; */
+
+import ProfileCard from './components/ProfileCard';
+import './App.css';
+
+const members = [
+  { id: 1, name: 'ธมนวรรณ พานสัมฤทธิ์', nickname: 'วิว',
+    major: 'เทคโนโลยีสารสนเทศ', favorites: ['ชามะนาว', 'หมา'] },
+  { id: 2, name: 'พัทธดนย์ บุญศรีทอง', nickname: 'เฟิร์ส',
+    major: 'เทคโนโลยีสารสนเทศ', favorites: ['นมกล้วย', 'หมา'] },
+  { id: 3, name: 'วัศพล ก๋อยสุวรรณ', nickname: 'ฮัท',
+    major: 'เทคโนโลยีสารสนเทศ', favorites: ['โค้ก', 'แมว'] },
+    // 👉 เพิ่มสมาชิกคนอื่น ๆ ของกลุ่มที่นี่
+];
+
+function App() {
+  return (
+    <div className="container">
+      <h1>สมาชิกกลุ่มของเรา</h1>
+      <div className="card-row">
+        {members.map((m) => (
+          <ProfileCard
+            key={m.id}
+            name={m.name}
+            nickname={m.nickname}
+            major={m.major}
+            favorites={m.favorites}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default App;
