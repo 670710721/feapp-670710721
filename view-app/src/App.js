@@ -42,7 +42,7 @@ function App() {
 
 export default App; */
 
-// import ProfileCard from './components/ProfileCard';
+
 import './App.css';
 
 /*const members = [
