@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './components/Header';
-import MovieList from './components/MovieList';
+// import Header from './components/Header';
+// import MovieList from './components/MovieList';
 
-import Greeting from './components/Greeting';
-import Card from './components/Card';
-import Button from './components/Button';
+// import Greeting from './components/Greeting';
+// import Card from './components/Card';
+// import Button from './components/Button';
 
 
 import { Routes, Route } from 'react-router-dom';
@@ -42,7 +42,7 @@ function App() {
 
 export default App; */
 
-import ProfileCard from './components/ProfileCard';
+// import ProfileCard from './components/ProfileCard';
 import './App.css';
 
 /*const members = [
